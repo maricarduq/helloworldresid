@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Ordenada</title>
+</head>
+<body>
+
+<div id="message-container"></div>
+
+<script>
+    // Função para aplicar o algoritmo Bubble Sort
+    function bubbleSort(arr) {
+        for (let i = 0; i < arr.length - 1; i++) {
+            for (let j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+                }
+            }
+        }
+        return arr;
+    }
+
+    // Mensagem embaralhada
+    const messageArray = ['6', '11', '12', '5', ' ', '30', '46', '3', '9'];
+
+    // Ordenar a mensagem usando Bubble Sort
+    const sortedMessageArray = bubbleSort(messageArray);
+
+    // Exibir a mensagem ordenada no navegador
+    document.getElementById('message-container').textContent = sortedMessageArray.join('');
+</script>
+
+</body>
+</html>
