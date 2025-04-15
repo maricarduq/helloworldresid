@@ -46,4 +46,3 @@ Se você gostaria de contribuir para este projeto, faça o seguinte:
    git push origin feature/your-feature-name
    ```
 
-5. Abra uma pull request no GitHub e fale comigo sobre seu trabalho.
